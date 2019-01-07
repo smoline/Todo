@@ -1,19 +1,19 @@
 {
   "todos": [
     {
-      "name": "cleanup",
+      "name": "Something",
       "id": 1
     },
     {
-      "name": "fix",
+      "name": "Pick up Today",
       "id": 2
     },
     {
-      "name": "Something",
+      "name": "Fix Tomorrow",
       "id": 3
     },
     {
-      "name": "A thing today",
+      "name": "Typing",
       "id": 4
     }
   ]

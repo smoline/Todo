@@ -1,13 +1,21 @@
-const FETCH_POSTS = 'FETCH_POSTS'
-const FETCH_POSTS_COMPLETE = 'FETCH_POSTS_COMPLETE'
+import { combineReducers } from 'redux'
 
-export const reddit = (state = [], action) => {
+export const CREATE_TODO = 'CREATE_TODO'
+
+const user = (state = {}, action) => {
+  return state
+}
+
+export const todos = (state = [], action) => {
   switch (action.type) {
-    case FETCH_POSTS:
-      return state
-    case FETCH_POSTS_COMPLETE:
-      return action.payload
+    case CREATE_TODO:
+      return [
+        action.payload,
+        ...state
+      ]
     default:
       return state
   }
 }
+
+export const reducer = combineReducers({ todos, user })
